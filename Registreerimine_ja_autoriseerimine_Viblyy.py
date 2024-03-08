@@ -1,12 +1,32 @@
-﻿from module1 import *
-kasutajad=[]
-paroolid=[]
-post=[]
-while True:
-    print("Kas tahate registreerida(1),  autoriseerida(2), muutuda nimi(3), muutuda parooli(4), parooli taastamine(5), või lõppetada?")
-    valik=int(input())
-    if valik==1:
-        Registreerimine(kasutajad,paroolid)
-        
+﻿#import smtplib, ssl
+#from email.message import EmailMessage 
 
-        
+#smtp_server = "smtp.gmail.com"
+#port = 587
+#sender_email = "bogdan.viblyy@gmail.com"
+#password = input("Type your password and press enter: ")
+
+##Create a secure SSL context
+#context = ssl.create_default_context()
+#msg=EmailMessage()
+#msg.set_content("Tere tulemast!")
+#msg['Subject']="Kirja teema"
+#msg['From']="bogdan.viblyy@gmail.com"
+#msg['To']="marina.oleinik@tthk.ee"
+
+
+## Try to log in to server and send email
+#try:
+#    server = smtplib.SMTP(smtp_server,port)
+#    server.ehlo() #Can be omitted
+#    server.starttls(context=context)
+#    server.ehlo() #Can be omitted
+#    server.login(sender_email,password)
+#    server.sendmail(sender_email,sender_email,msg)
+#    # TODO: Send email here
+#except Exception as e:
+#    # Print any error messages to stdout
+#    print(e)
+#finally:
+#    server.quet()
+
